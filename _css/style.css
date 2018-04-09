@@ -1,0 +1,12 @@
+/* global styles */
+
+main {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
