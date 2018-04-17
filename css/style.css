@@ -1,3 +1,4 @@
+/* global styles */
 body {
     margin: 0;
     border-top: 5px solid deepskyblue;
@@ -14,7 +15,6 @@ main {
 h1 {
     margin-top: 0;
     font-family: 'Carter One', cursive;
-    font-size: 4rem;
     color: white;
     text-shadow: 4px 4px #333;
     letter-spacing: 0.4rem;
@@ -48,14 +48,60 @@ nav p {
     margin: 0;
     padding: 1rem;
     font-family: 'Arvo', serif;
-    font-size: 3rem;
-    line-height: 3rem;
     text-shadow: 4px 4px #333;
 }
 
 img {
     border-radius: 50%;
-    height: 6rem;
+    /* height: 6rem; */
     margin-right: -2rem;
     padding: 4px;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav p {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    img {
+        height: 4rem;
+    }
+}
+
+/* tablet styles */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav p {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    img {
+        height: 5rem;
+    }
+}
+
+/* desktop styles */
+@media only screen and (min-width: 769px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav p {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    img {
+        height: 6rem;
+    }
 }
