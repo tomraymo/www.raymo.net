@@ -2,10 +2,12 @@
 body {
   margin: 0;
   border-top: 5px solid deepskyblue;
+  font-size: 100%;
   background-image: url("../images/blur.jpg");
   background-repeat: no-repeat;
-  object-fit: cover;
-  font-size: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
 main {
