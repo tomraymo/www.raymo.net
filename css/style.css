@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Carter+One');
-@import url('https://fonts.googleapis.com/css?family=Arvo');
-
+@import url("https://fonts.googleapis.com/css?family=Carter+One");
+@import url("https://fonts.googleapis.com/css?family=Arvo");
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-image: url('../img/blur.jpg');
+  background-image: url("../img/blur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,8 +20,8 @@ main {
 }
 
 h1 {
-  font-family: 'Carter One', cursive;
-  color: #fff;
+  font-family: "Carter One", cursive;
+  color: white;
   font-size: 4rem;
   text-shadow: 0.25rem 0.25rem #000;
 }
@@ -40,7 +39,7 @@ ul {
 li a {
   text-decoration: none;
   color: #fff;
-  font-family: 'Arvo', Helvetica, sans-serif;
+  font-family: "Arvo", Helvetica, sans-serif;
 }
 
 li a span {
