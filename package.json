@@ -1,0 +1,14 @@
+{
+  "name": "www.raymo.net",
+  "version": "0.3.0",
+  "description": "A simple directory of Raymo family websites",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomraymo/www.raymo.net.git"
+  },
+  "author": "Tom Raymo",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
