@@ -3,8 +3,14 @@ var gulp = require("gulp"),
     imagemin = require("gulp-imagemin");
 
 var outputDir = "docs",
+    htmlSources = "src/*.html",
     sassSources = "src/sass/*.scss",
     imgSources = "src/images/*";
+
+gulp.task("html", function () {
+    gulp.src(htmlSources)
+        .pipe(gulp.dest(outputDir));
+});
 
 gulp.task("sass", function () {
     gulp.src(sassSources)
@@ -23,8 +29,9 @@ gulp.task("imagemin", function () {
 });
 
 gulp.task("watch", function () {
+    gulp.watch(htmlSources, ["html"]);
     gulp.watch(sassSources, ["sass"]);
     gulp.watch(imgSources, ["imagemin"]);
 });
 
-gulp.task("default", ["sass", "imagemin", "watch"]);
+gulp.task("default", ["html", "sass", "imagemin", "watch"]);
